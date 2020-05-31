@@ -1,13 +1,13 @@
 select a.name
 , a.id
 , o.id
-, i.id
-, i.name
+--, i.id
+--, i.name
 from Adventurer a
 join Orders o on
 	a.id = o.AdventurerID
-join Items i on
-	i.id = o.ItemID
+--join Items i on
+--	i.id = o.ItemID
 	
 
 
