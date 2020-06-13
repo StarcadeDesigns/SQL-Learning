@@ -5,8 +5,9 @@ select a.name
 from Adventurer a
 join orders o on
 	a.id = o.AdventurerID
-join Stores s on
-	o.StoreID = s.ID
+--Store table was not needed in join as the storeID can be found in the orders table for the where
+--join Stores s on 
+--	o.StoreID = s.ID
 join items i on
 	i.ID = o.ItemID
 

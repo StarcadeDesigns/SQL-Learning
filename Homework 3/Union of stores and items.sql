@@ -1,7 +1,8 @@
 select name
 from Stores
 
-union all
+-- a union would have shown me all results as 1 output instead of 2 separate ones. 
+--union all
 
 select name
 from Items
